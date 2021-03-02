@@ -1,0 +1,7 @@
+name: random
+on: push
+jobs:
+  random:
+    runs-on: ubuntu-latest
+    steps:
+      - run: (( $RANDOM > 16000 ))
